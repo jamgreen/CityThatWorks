@@ -150,4 +150,18 @@ chi <- chi %>% mutate(NAICS_LABEL_ADJUSTED = recode(NAICS_ADJUSTED, "31-33M" = "
                                                          "44-45" ="Retail Trade",
                                                          .default = NAICS_LABEL))
 
+chi$NAICS_LABEL_ADJUSTED <- factor(chi$NAICS_LABEL_ADJUSTED, 
+                                          levels = c("Agriculture, Forestry, Fishing and Hunting",
+                                          "Mining", "Utilities", "Construction", "Manufacturing",
+                                          "Wholesale Trade","Retail Trade", "Transportation and Warehousing",
+                                          "Information and Communications",
+                                          "Fire, Insurance, Real Estate,\n and Rental and Leasing",
+                                          "Professional, Scientific, Management,  Administrative,\n
+                                           and Waste Management Services",
+                                          "Education, Health, and Social Services",
+                                          "Arts, Entertainment, Recreation, Accommodations,\n
+                                          and Food Services",
+                                          "Other Services", "Public Administration and Military",
+                                          "Unemployed"))
+
 rm(naics_labels)

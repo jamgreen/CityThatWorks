@@ -76,19 +76,7 @@ naics_race <- read_csv("./data/2017-08-30_naics_super_racehisp2.csv")
 soc_race <- read_csv("./data/2017-08-30_soc_racehisp2.csv")
 
 
-naics_race$NAICS_LABEL_ADJUSTED <- factor(naics_race$NAICS_LABEL_ADJUSTED, 
-                                          levels = c("Agriculture, Forestry, Fishing and Hunting",
-                                          "Mining", "Utilities", "Construction",
-                                          "Manufacturing","Wholesale Trade",
-                                          "Retail Trade", "Transportation and Warehousing",
-                                          "Information and Communications",
-                                          "Fire, Insurance, Real Estate,\n and Rental and Leasing",
-                                          "Professional, Scientific, Management,  Administrative,\n
-                                            and Waste Management Services",
-                                          "Education, Health, and Social Services",
-                                          "Arts, Entertainment, Recreation, Accommodations,\n
-                                          and Food Services",
-                                        "Other Services", "Public Administration and Military","Unemployed"))
+
 
 naics_race <- naics_race %>% group_by(NAICS_LABEL_ADJUSTED,RACE_HISP2) %>% 
   summarise(RACE_TOTAL = sum(RACE_HISP2_NAICS_TOTAL))
@@ -102,7 +90,7 @@ naics_plot <- naics_race %>% filter(NAICS_LABEL_ADJUSTED != "Unemployed") %>%
 
 naics_plot + geom_bar(stat = "identity", position = "stack") + theme_minimal() +
   labs(x = "NAICS Super Sectors", y = "Race/Ethnicity Share of Employment", 
-       title = "Share of Workers by Race/Ethnicity in Industry Super Sectors",
+      title = "Share of Workers by Race/Ethnicity in Industry Super Sectors\n for the Chicago MSA, 2011-2015",
        caption = "Source: IPUMS-USA, Univeristy of Minnesota, American Community Survey 2011-2015") +
   scale_y_continuous(labels = scales::percent, expand = c(0,0)) +
   theme(plot.caption = element_text(hjust = 0, size = 8),
@@ -153,10 +141,12 @@ soc_plot <- ggplot(soc_race, aes(x= reorder(SOC_LABEL, -as.integer(SOC_CODE)),
                                  y = RACE_HISP_SHARE, fill = RACE_HISP2))
 soc_plot + geom_bar(stat = "identity", position = "stack") +theme_minimal() +
   labs(x = "Major Occupations", y = "Race/Ethnicity Share of Employment", 
-       title = "Share of Workers by Race/Ethnicity in Major Occupations",
+       title = "Share of Workers by Race/Ethnicity in Major Occupations\n for the Chicago MSA, 2011-2015",
        caption = "Source: IPUMS-USA, Univeristy of Minnesota, American Community Survey 2011-2015") +
   scale_y_continuous(labels = scales::percent, expand = c(0,0)) +
   theme(plot.caption = element_text(hjust = 0, size = 8),
         panel.grid = element_blank(),
         axis.line.x = element_line(color = "black")) + coord_flip() +
 scale_fill_ptol(name = "Race/Hispanic Ethnicity")
+
+ggsave(filename = "05-soc_racehisp_stack.pdf", path = "./reports/plots", width = 8.5, height = 8)
