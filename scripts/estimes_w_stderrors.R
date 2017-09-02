@@ -90,10 +90,10 @@ write_csv(naics_hisp,"./data/2017-08-28_naics_super_by_hisp.csv")
 write_csv(naics_racehisp, "./data/2017-08-28_naics_super_by_racehisp.csv")
 
 #have to use chi because of some matrix error with the new RACEHISP2 variable
-naics_hisp2 <- chi %>% filter(NAICS_SUPER != "0") %>% 
-  group_by(NAICS_SUPER, NAICS_LABEL ,RACE_HISP2) %>% summarise(RACE_HISP2_NAICS_TOTAL = sum(PERWT))
+naics_hisp2 <- chi %>% filter(NAICS_ADJUSTED != "0") %>% 
+  group_by(NAICS_ADJUSTED, NAICS_LABEL_ADJUSTED ,RACE_HISP2) %>% summarise(RACE_HISP2_NAICS_TOTAL = sum(PERWT))
 
-naics_hisp2 <- naics_hisp2 %>% group_by(NAICS_SUPER, NAICS_LABEL) %>% 
+naics_hisp2 <- naics_hisp2 %>% group_by(NAICS_ADJUSTED, NAICS_LABEL_ADJUSTED) %>% 
   mutate(NAICS_TOT_EMP = sum(RACE_HISP2_NAICS_TOTAL),
         RACE_HISP_SHARE = RACE_HISP2_NAICS_TOTAL/NAICS_TOT_EMP) %>% ungroup()
 

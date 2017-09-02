@@ -75,36 +75,30 @@ p_hisp + geom_bar(stat = "identity", position = "stack") + theme_minimal()
 naics_race <- read_csv("./data/2017-08-30_naics_super_racehisp2.csv")
 soc_race <- read_csv("./data/2017-08-30_soc_racehisp2.csv")
 
-naics_race <- naics_race %>% mutate(NAICS_ADJUSTED = ifelse(NAICS_SUPER == "31" | NAICS_SUPER == "32"|
-                                    NAICS_SUPER == "33" | NAICS_SUPER == "3M", "31-33M",
-                                    ifelse(NAICS_SUPER == "44"| NAICS_SUPER == "45" | NAICS_SUPER == "4M", 
-                                    "44-45", NAICS_SUPER)))
 
-naics_race <- naics_race %>% mutate(NAICS_LABEL = recode(NAICS_ADJUSTED, "31-33M" = "Manufacturing",
-                                                         "44-45" ="Retail Trade",
-                                                         .default = NAICS_LABEL))
+naics_race$NAICS_LABEL_ADJUSTED <- factor(naics_race$NAICS_LABEL_ADJUSTED, 
+                                          levels = c("Agriculture, Forestry, Fishing and Hunting",
+                                          "Mining", "Utilities", "Construction",
+                                          "Manufacturing","Wholesale Trade",
+                                          "Retail Trade", "Transportation and Warehousing",
+                                          "Information and Communications",
+                                          "Fire, Insurance, Real Estate,\n and Rental and Leasing",
+                                          "Professional, Scientific, Management,  Administrative,\n
+                                            and Waste Management Services",
+                                          "Education, Health, and Social Services",
+                                          "Arts, Entertainment, Recreation, Accommodations,\n
+                                          and Food Services",
+                                        "Other Services", "Public Administration and Military","Unemployed"))
 
-naics_race$NAICS_LABEL <- factor(naics_race$NAICS_LABEL, levels = c("Agriculture, Forestry, Fishing and Hunting",
-                                                        "Mining", "Utilities", "Construction",
-                                                        "Manufacturing","Wholesale Trade",
-                                                        "Retail Trade", "Transportation and Warehousing",
-                                                        "Information and Communications",
-                                                        "Fire, Insurance, Real Estate,\n and Rental and Leasing",
-                      "Professional, Scientific, Management,  Administrative,\n
-                      and Waste Management Services",
-                      "Education, Health, and Social Services",
-                      "Arts, Entertainment, Recreation, Accommodations,\n
-                        and Food Services",
-                      "Other Services", "Public Administration and Military","Unemployed"))
-
-naics_race <- naics_race %>% group_by(NAICS_LABEL,RACE_HISP2) %>% 
+naics_race <- naics_race %>% group_by(NAICS_LABEL_ADJUSTED,RACE_HISP2) %>% 
   summarise(RACE_TOTAL = sum(RACE_HISP2_NAICS_TOTAL))
-naics_race <- naics_race %>% group_by(NAICS_LABEL) %>% 
+naics_race <- naics_race %>% group_by(NAICS_LABEL_ADJUSTED) %>% 
   mutate(NAICS_TOT = sum(RACE_TOTAL),RACE_HISP_SHARE = RACE_TOTAL/NAICS_TOT)
 
 
-naics_plot <- naics_race %>% filter(NAICS_LABEL != "Unemployed") %>% 
-  ggplot(aes(x = NAICS_LABEL, y = RACE_HISP_SHARE, fill = RACE_HISP2))
+naics_plot <- naics_race %>% filter(NAICS_LABEL_ADJUSTED != "Unemployed") %>% 
+  ggplot(aes(x = factor(NAICS_LABEL_ADJUSTED, levels =rev(levels(NAICS_LABEL_ADJUSTED))) , 
+             y = RACE_HISP_SHARE, fill = RACE_HISP2))
 
 naics_plot + geom_bar(stat = "identity", position = "stack") + theme_minimal() +
   labs(x = "NAICS Super Sectors", y = "Race/Ethnicity Share of Employment", 
@@ -116,6 +110,8 @@ naics_plot + geom_bar(stat = "identity", position = "stack") + theme_minimal() +
         axis.line.x = element_line(color = "black"),
         axis.text.x = element_text(size = 8.5)) + 
   scale_fill_ptol(name = "Race/Hispanic Ethnicity") + coord_flip()
+
+ggsave(filename = "04-naics_by_racehisp_stack.pdf",path = "./reports/plots/", width = 8.5, height = 8)
 
 
 #create a shorter SOC label for easier display on axes

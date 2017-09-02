@@ -14,13 +14,13 @@ chi <- read_csv("data/usa_00055.csv", col_types =
                        HISPAN = col_character()))
 
 #recode to major SOC groups for easier summing up for Greg and grab employed
-#get other groups created and listed up
+#get other groups created and listed up ----
 
 chi <- chi %>% mutate(SOC_MAJOR = str_sub(OCCSOC, 1, 2))
 
 chi <- chi %>% filter(LABFORCE > 0)
 
-#race recodes
+#race and race/hispanic recodes-----
 chi <- chi %>% mutate(RACE2 = recode(RACE, "1" = "White",
                                      "2" = "Black",
                                      "3" = "AIAN",
@@ -36,8 +36,26 @@ chi <- chi %>% mutate(RACE2 = recode(RACE, "1" = "White",
 
 chi$RACE2 <- as.factor(chi$RACE2)
 
+chi$RACE_HISP <- NA
+chi$RACE_HISP[chi$RACE2 == "White" & chi$HISP2 == "Not Hispanic" | chi$HISP2 == "Unknown"] <- "Non-Hispanic White"
+chi$RACE_HISP[chi$RACE2 == "White" & chi$HISP2 == "Hispanic"] <-  "Hispanic White"
+chi$RACE_HISP[chi$RACE2 == "Black" & chi$HISP2 == "Not Hispanic" | chi$HISP2 == "Unknown"] <- "Non-Hispanic Black"
+chi$RACE_HISP[chi$RACE2 == "Black" & chi$HISP2 == "Hispanic"] <- "Hispanic Black"
+chi$RACE_HISP[chi$RACE2 == "AIAN" & chi$HISP2 == "Not Hispanic" | chi$HISP2 == "Unknown"] <- "Non-Hispanic AIAN"
+chi$RACE_HISP[chi$RACE2 == "AIAN" & chi$HISP2 == "Hispanic"] <- "Hispanic AIAN"
+chi$RACE_HISP[chi$RACE2 == "Asian" & chi$HISP2 == "Not Hispanic" | chi$HISP2 == "Unknown"] <- "Non-Hispanic Asian"
+chi$RACE_HISP[chi$RACE2 == "Asian" & chi$HISP2 == "Hispanic"] <- "Hispanic Asian"
+chi$RACE_HISP[chi$RACE2 == "Other Race" & chi$HISP2 == "Not Hispanic" | chi$HISP2 == "Unknown"] <- "Non-Hispanic Other"
+chi$RACE_HISP[chi$RACE2 == "Other Race" & chi$HISP2 == "Hispanic"] <- "Hispanic Other"
+
+chi$RACE_HISP <- as.factor(chi$RACE_HISP)
+
+chi <- chi %>% mutate(RACE_HISP2 = ifelse(RACE_HISP %in% c("Hispanic White", "Hispanic Black",
+                                          "Hispanic AIAN", "Hispanic Asian","Hispanic Other"), 
+                                          "Hispanic", as.character(RACE2)))
 
 
+# occupation recodes -----
 chi <- chi %>% mutate(SOC_LABEL = recode(SOC_MAJOR, "11" = "Management Occupations",
                                          "13" = "Business and Financial Operations Occupations",
                                          "15" = "Computer and Mathematical Occupations",
@@ -66,37 +84,20 @@ chi <- chi %>% mutate(SOC_LABEL = recode(SOC_MAJOR, "11" = "Management Occupatio
 chi$SOC_LABEL[chi$SOC_LABEL == "0"] <- NA
 chi$SOC_LABEL[chi$SOC_LABEL == "99"] <- "Unemployed"
 
-chi$RACE_HISP <- NA
-chi$RACE_HISP[chi$RACE2 == "White" & chi$HISP2 == "Not Hispanic" | chi$HISP2 == "Unknown"] <- "Non-Hispanic White"
-chi$RACE_HISP[chi$RACE2 == "White" & chi$HISP2 == "Hispanic"] <-  "Hispanic White"
-chi$RACE_HISP[chi$RACE2 == "Black" & chi$HISP2 == "Not Hispanic" | chi$HISP2 == "Unknown"] <- "Non-Hispanic Black"
-chi$RACE_HISP[chi$RACE2 == "Black" & chi$HISP2 == "Hispanic"] <- "Hispanic Black"
-chi$RACE_HISP[chi$RACE2 == "AIAN" & chi$HISP2 == "Not Hispanic" | chi$HISP2 == "Unknown"] <- "Non-Hispanic AIAN"
-chi$RACE_HISP[chi$RACE2 == "AIAN" & chi$HISP2 == "Hispanic"] <- "Hispanic AIAN"
-chi$RACE_HISP[chi$RACE2 == "Asian" & chi$HISP2 == "Not Hispanic" | chi$HISP2 == "Unknown"] <- "Non-Hispanic Asian"
-chi$RACE_HISP[chi$RACE2 == "Asian" & chi$HISP2 == "Hispanic"] <- "Hispanic Asian"
-chi$RACE_HISP[chi$RACE2 == "Other Race" & chi$HISP2 == "Not Hispanic" | chi$HISP2 == "Unknown"] <- "Non-Hispanic Other"
-chi$RACE_HISP[chi$RACE2 == "Other Race" & chi$HISP2 == "Hispanic"] <- "Hispanic Other"
-
-chi$RACE_HISP <- as.factor(chi$RACE_HISP)
 
 
-#percent of workforce above Living Wage: http://livingwage.mit.edu/counties/17031
+
+#percent of workforce above Living Wage: http://livingwage.mit.edu/counties/17031 ----
 chi$ADULT_CHILD_LW <- (24.89 * 2080)
 chi$ADULT_LW <-  (12.56 * 2080)
 
 chi <- chi %>% mutate(ADULT_CHILD_DUMMY = ifelse(INCWAGE > ADULT_CHILD_LW, 1, 0),
                       ADULT_DUMMY = ifelse(INCWAGE > ADULT_LW, 1, 0))
 
-#find manufacturing industries
+#find manufacturing industries----
 
 chi <- chi %>% mutate(MFG = ifelse(grepl("^3", chi$INDNAICS),1,0))
 
-#race hispanic recode for Greg
-chi <- chi %>% mutate(RACE_HISP2 = ifelse(RACE_HISP %in% c("Hispanic White", "Hispanic Black",
-                                                           "Hispanic AIAN", "Hispanic Asian",
-                                                           "Hispanic Other"), "Hispanic", 
-                                          as.character(RACE2)))
 
 #NAICS supersector
 
@@ -138,5 +139,15 @@ naics_labels <- tribble(~NAICS_SUPER, ~NAICS_LABEL,
                         "0", "Not Applicable")
 
 chi <- chi %>% left_join(naics_labels)
+
+chi <- chi %>% 
+  mutate(NAICS_ADJUSTED = ifelse(NAICS_SUPER == "31" | NAICS_SUPER == "32"|
+                                NAICS_SUPER == "33" | NAICS_SUPER == "3M", "31-33M",
+                                ifelse(NAICS_SUPER == "44"| NAICS_SUPER == "45" | 
+                                NAICS_SUPER == "4M", "44-45", NAICS_SUPER)))
+
+chi <- chi %>% mutate(NAICS_LABEL_ADJUSTED = recode(NAICS_ADJUSTED, "31-33M" = "Manufacturing",
+                                                         "44-45" ="Retail Trade",
+                                                         .default = NAICS_LABEL))
 
 rm(naics_labels)
