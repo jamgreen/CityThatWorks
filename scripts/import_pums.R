@@ -5,8 +5,9 @@
 if(!require(pacman)){install.packages("pacman");library(pacman)}
 p_load(readr, stringr, dplyr)
 
-chi <- read_csv("data/usa_00055.csv", col_types = 
+chi <- read_csv("data/usa_00056.csv.gz", col_types = 
                   cols(.default = col_integer(),
+                       EMPSTAT = col_integer(),
                        OCCSOC = col_character(),
                        IND = col_character(),
                        INDNAICS = col_character(),
@@ -18,7 +19,7 @@ chi <- read_csv("data/usa_00055.csv", col_types =
 
 chi <- chi %>% mutate(SOC_MAJOR = str_sub(OCCSOC, 1, 2))
 
-chi <- chi %>% filter(LABFORCE > 0)
+chi <- chi %>% filter(EMPSTAT == 1)
 
 #race and race/hispanic recodes-----
 chi <- chi %>% mutate(RACE2 = recode(RACE, "1" = "White",
@@ -150,18 +151,17 @@ chi <- chi %>% mutate(NAICS_LABEL_ADJUSTED = recode(NAICS_ADJUSTED, "31-33M" = "
                                                          "44-45" ="Retail Trade",
                                                          .default = NAICS_LABEL))
 
-chi$NAICS_LABEL_ADJUSTED <- factor(chi$NAICS_LABEL_ADJUSTED, 
-                                          levels = c("Agriculture, Forestry, Fishing and Hunting",
-                                          "Mining", "Utilities", "Construction", "Manufacturing",
-                                          "Wholesale Trade","Retail Trade", "Transportation and Warehousing",
-                                          "Information and Communications",
-                                          "Fire, Insurance, Real Estate,\n and Rental and Leasing",
-                                          "Professional, Scientific, Management,  Administrative,\n
-                                           and Waste Management Services",
-                                          "Education, Health, and Social Services",
-                                          "Arts, Entertainment, Recreation, Accommodations,\n
-                                          and Food Services",
-                                          "Other Services", "Public Administration and Military",
-                                          "Unemployed"))
+# chi$NAICS_LABEL_ADJUSTED <- factor(chi$NAICS_LABEL_ADJUSTED, 
+#                                           levels = c("Agriculture, Forestry, Fishing and Hunting",
+#                                           "Mining", "Utilities", "Construction", "Manufacturing",
+#                                           "Wholesale Trade","Retail Trade", "Transportation and Warehousing",
+#                                           "Information and Communications",
+#                                           "Fire, Insurance, Real Estate,\n and Rental and Leasing",
+#                                           "Professional, Scientific, Management,  Administrative,\n
+#                                            and Waste Management Services",
+#                                           "Education, Health, and Social Services",
+#                                           "Arts, Entertainment, Recreation, Accommodations,\n
+#                                           and Food Services",
+#                                           "Other Services", "Public Administration and Military"))
 
 rm(naics_labels)

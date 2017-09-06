@@ -84,7 +84,10 @@ naics_race <- naics_race %>% group_by(NAICS_LABEL_ADJUSTED) %>%
   mutate(NAICS_TOT = sum(RACE_TOTAL),RACE_HISP_SHARE = RACE_TOTAL/NAICS_TOT)
 
 
-naics_plot <- naics_race %>% filter(NAICS_LABEL_ADJUSTED != "Unemployed") %>% 
+naics_race$NAICS_LABEL_ADJUSTED <- factor(naics_race$NAICS_LABEL_ADJUSTED, 
+                                          levels = naics_race$NAICS_LABEL_ADJUSTED)
+
+naics_plot <- naics_race %>% filter(!is.na(NAICS_LABEL_ADJUSTED)) %>% 
   ggplot(aes(x = factor(NAICS_LABEL_ADJUSTED, levels =rev(levels(NAICS_LABEL_ADJUSTED))) , 
              y = RACE_HISP_SHARE, fill = RACE_HISP2))
 

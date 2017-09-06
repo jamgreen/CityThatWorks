@@ -1,201 +1,195 @@
 NAICS_ADJUSTED,NAICS_LABEL_ADJUSTED,RACE_HISP2,RACE_HISP2_NAICS_TOTAL,NAICS_TOT_EMP,RACE_HISP_SHARE
-11,"Agriculture, Forestry, Fishing and Hunting",AIAN,11,18353,5.993570533427778e-4
-11,"Agriculture, Forestry, Fishing and Hunting",Asian,451,18353,0.024573639187053888
-11,"Agriculture, Forestry, Fishing and Hunting",Black,750,18353,0.040865253637007576
-11,"Agriculture, Forestry, Fishing and Hunting",Hispanic,3626,18353,0.19756987958371927
-11,"Agriculture, Forestry, Fishing and Hunting",Other Race,328,18353,0.017871737590584646
-11,"Agriculture, Forestry, Fishing and Hunting",White,13187,18353,0.7185201329482919
-21,Mining,Asian,121,2613,0.04630692690394183
-21,Mining,Black,265,2613,0.101415996938385
-21,Mining,Hispanic,424,2613,0.162265595101416
-21,Mining,Other Race,36,2613,0.013777267508610792
-21,Mining,White,1767,2613,0.6762342135476463
-22,Utilities,AIAN,58,30824,0.001881650661821957
-22,Utilities,Asian,1030,30824,0.033415520373734756
-22,Utilities,Black,5116,30824,0.1659745652738126
-22,Utilities,Hispanic,3915,30824,0.1270114196729821
-22,Utilities,Other Race,260,30824,0.008434985725408772
-22,Utilities,White,20445,30824,0.6632818582922398
-23,Construction,AIAN,407,297638,0.0013674329218715353
-23,Construction,Asian,3992,297638,0.013412265906907047
-23,Construction,Black,19128,297638,0.06426598754191333
-23,Construction,Hispanic,73733,297638,0.2477271047379703
-23,Construction,Other Race,2518,297638,0.008459941270939866
-23,Construction,White,197860,297638,0.664767267620398
-31-33M,Manufacturing,AIAN,576,663560,8.68045090119959e-4
-31-33M,Manufacturing,Asian,41438,663560,0.062448007715956357
-31-33M,Manufacturing,Black,62233,663560,0.09378654530110314
-31-33M,Manufacturing,Hispanic,201745,663560,0.30403429983724156
-31-33M,Manufacturing,Other Race,6164,663560,0.009289288082464283
-31-33M,Manufacturing,White,351404,663560,0.5295738139731148
-42,Wholesale Trade,AIAN,339,169170,0.0020039014009576167
-42,Wholesale Trade,Asian,10545,169170,0.062333747118283385
-42,Wholesale Trade,Black,14352,169170,0.08483773718744458
-42,Wholesale Trade,Hispanic,35410,169170,0.20931607258970267
-42,Wholesale Trade,Other Race,1444,169170,0.008535792398179346
-42,Wholesale Trade,White,107080,169170,0.6329727493054325
-44-45,Retail Trade,AIAN,460,624678,7.363793826579454e-4
-44-45,Retail Trade,Asian,38541,624678,0.06169738649352146
-44-45,Retail Trade,Black,89633,624678,0.14348672436039048
-44-45,Retail Trade,Hispanic,119650,624678,0.19153868072831123
-44-45,Retail Trade,Other Race,10142,624678,0.01623556456286279
-44-45,Retail Trade,White,366252,624678,0.5863052644722561
-48,Transportation and Warehousing,AIAN,134,213292,6.28246722802543e-4
-48,Transportation and Warehousing,Asian,11170,213292,0.052369521594808996
-48,Transportation and Warehousing,Black,45625,213292,0.21390863229750764
-48,Transportation and Warehousing,Hispanic,34620,213292,0.16231269808525403
-48,Transportation and Warehousing,Other Race,2775,213292,0.013010333252067588
-48,Transportation and Warehousing,White,118968,213292,0.5577705680475592
-49,Transportation and Warehousing,AIAN,124,80531,0.0015397797121605346
-49,Transportation and Warehousing,Asian,2891,80531,0.03589921893432343
-49,Transportation and Warehousing,Black,28515,80531,0.35408724590530355
-49,Transportation and Warehousing,Hispanic,15887,80531,0.19727806683140653
-49,Transportation and Warehousing,Other Race,937,80531,0.011635270889471135
-49,Transportation and Warehousing,White,32177,80531,0.3995604177273348
-51,Information and Communications,AIAN,81,121060,6.690897075830167e-4
-51,Information and Communications,Asian,7624,121060,0.06297703618040641
-51,Information and Communications,Black,18361,121060,0.1516685940855774
-51,Information and Communications,Hispanic,14652,121060,0.12103089377168347
-51,Information and Communications,Other Race,1978,121060,0.01633900545184206
-51,Information and Communications,White,78364,121060,0.6473153808029076
+11,"Agriculture, Forestry, Fishing and Hunting",AIAN,11,12580,8.744038155802862e-4
+11,"Agriculture, Forestry, Fishing and Hunting",Asian,160,12580,0.012718600953895072
+11,"Agriculture, Forestry, Fishing and Hunting",Black,331,12580,0.026311605723370428
+11,"Agriculture, Forestry, Fishing and Hunting",Hispanic,2734,12580,0.21732909379968204
+11,"Agriculture, Forestry, Fishing and Hunting",Other Race,168,12580,0.013354531001589825
+11,"Agriculture, Forestry, Fishing and Hunting",White,9176,12580,0.7294117647058823
+21,Mining,Asian,18,2218,0.008115419296663661
+21,Mining,Black,255,2218,0.11496844003606853
+21,Mining,Hispanic,395,2218,0.17808836789900812
+21,Mining,Other Race,36,2218,0.016230838593327322
+21,Mining,White,1514,2218,0.6825969341749324
+22,Utilities,AIAN,58,25981,0.0022324006004387823
+22,Utilities,Asian,759,25981,0.0292136561333282
+22,Utilities,Black,4038,25981,0.155421269389169
+22,Utilities,Hispanic,3580,25981,0.13779300257880758
+22,Utilities,Other Race,218,25981,0.008390747084407837
+22,Utilities,White,17328,25981,0.6669489242138485
+23,Construction,AIAN,271,229511,0.0011807712920077905
+23,Construction,Asian,3066,229511,0.013358836831350132
+23,Construction,Black,12249,229511,0.05336999098082445
+23,Construction,Hispanic,58763,229511,0.2560356584216007
+23,Construction,Other Race,1887,229511,0.008221828147670482
+23,Construction,White,153275,229511,0.6678329143265465
+31-33M,Manufacturing,AIAN,471,555832,8.473783445357591e-4
+31-33M,Manufacturing,Asian,36039,555832,0.06483793664272658
+31-33M,Manufacturing,Black,45928,555832,0.08262928366844659
+31-33M,Manufacturing,Hispanic,171894,555832,0.30925531455547717
+31-33M,Manufacturing,Other Race,5061,555832,0.009105269218037105
+31-33M,Manufacturing,White,296439,555832,0.5333248175707768
+42,Wholesale Trade,AIAN,339,144052,0.0023533168578013493
+42,Wholesale Trade,Asian,9239,144052,0.06413656179712882
+42,Wholesale Trade,Black,10582,144052,0.073459584039097
+42,Wholesale Trade,Hispanic,30723,144052,0.21327714991808513
+42,Wholesale Trade,Other Race,1113,144052,0.007726376586232749
+42,Wholesale Trade,White,92056,144052,0.6390470108016549
+44-45,Retail Trade,AIAN,191,488723,3.908144286231669e-4
+44-45,Retail Trade,Asian,31393,488723,0.06423475056422555
+44-45,Retail Trade,Black,62308,488723,0.1274914419824727
+44-45,Retail Trade,Hispanic,99155,488723,0.20288588832528856
+44-45,Retail Trade,Other Race,7431,488723,0.015204932037166248
+44-45,Retail Trade,White,288245,488723,0.5897921726622238
+48,Transportation and Warehousing,AIAN,134,180102,7.440228315065907e-4
+48,Transportation and Warehousing,Asian,9597,180102,0.0532864709997668
+48,Transportation and Warehousing,Black,35636,180102,0.19786565390723035
+48,Transportation and Warehousing,Hispanic,30196,180102,0.1676605479117389
+48,Transportation and Warehousing,Other Race,2241,180102,0.012442948995569178
+48,Transportation and Warehousing,White,102298,180102,0.5680003553541881
+49,Transportation and Warehousing,AIAN,124,64970,0.0019085731876250576
+49,Transportation and Warehousing,Asian,2479,64970,0.03815607203324611
+49,Transportation and Warehousing,Black,21723,64970,0.334354317377251
+49,Transportation and Warehousing,Hispanic,13805,64970,0.21248268431583808
+49,Transportation and Warehousing,Other Race,638,64970,0.009819916884716022
+49,Transportation and Warehousing,White,26201,64970,0.4032784362013237
+51,Information and Communications,AIAN,61,99750,6.115288220551378e-4
+51,Information and Communications,Asian,6080,99750,0.06095238095238095
+51,Information and Communications,Black,13612,99750,0.1364611528822055
+51,Information and Communications,Hispanic,12483,99750,0.12514285714285714
+51,Information and Communications,Other Race,1434,99750,0.01437593984962406
+51,Information and Communications,White,66080,99750,0.6624561403508772
 52,"Fire, Insurance, Real Estate,
- and Rental and Leasing",AIAN,184,305666,6.019642354727055e-4
+ and Rental and Leasing",AIAN,143,262819,5.441006928722809e-4
 52,"Fire, Insurance, Real Estate,
- and Rental and Leasing",Asian,24547,305666,0.08030660917472011
+ and Rental and Leasing",Asian,21214,262819,0.08071714754260537
 52,"Fire, Insurance, Real Estate,
- and Rental and Leasing",Black,37914,305666,0.12403734795495737
+ and Rental and Leasing",Black,30544,262819,0.11621686407755909
 52,"Fire, Insurance, Real Estate,
- and Rental and Leasing",Hispanic,32785,305666,0.1072575948911557
+ and Rental and Leasing",Hispanic,28139,262819,0.10706607969743435
 52,"Fire, Insurance, Real Estate,
- and Rental and Leasing",Other Race,3370,305666,0.011025105834472922
+ and Rental and Leasing",Other Race,2726,262819,0.01037215726412474
 52,"Fire, Insurance, Real Estate,
- and Rental and Leasing",White,206866,305666,0.6767713779092212
+ and Rental and Leasing",White,180053,262819,0.6850836507254042
 53,"Fire, Insurance, Real Estate,
- and Rental and Leasing",AIAN,41,98619,4.157413885762378e-4
+ and Rental and Leasing",AIAN,41,81722,5.017008883776707e-4
 53,"Fire, Insurance, Real Estate,
- and Rental and Leasing",Asian,3296,98619,0.03342155162798244
+ and Rental and Leasing",Asian,2675,81722,0.03273292381488461
 53,"Fire, Insurance, Real Estate,
- and Rental and Leasing",Black,14110,98619,0.1430758778734321
+ and Rental and Leasing",Black,10442,81722,0.1277746506448692
 53,"Fire, Insurance, Real Estate,
- and Rental and Leasing",Hispanic,13032,98619,0.13214492136403735
+ and Rental and Leasing",Hispanic,11438,81722,0.1399623112503365
 53,"Fire, Insurance, Real Estate,
- and Rental and Leasing",Other Race,1078,98619,0.010930956509394742
+ and Rental and Leasing",Other Race,836,81722,0.01022980348009104
 53,"Fire, Insurance, Real Estate,
- and Rental and Leasing",White,67062,98619,0.6800109512365772
+ and Rental and Leasing",White,56290,81722,0.6887986099214409
 54,"Professional, Scientific, Management,  Administrative,
 
-                        and Waste Management Services",AIAN,437,433533,0.0010079970844203325
+                        and Waste Management Services",AIAN,255,374727,6.804954006516744e-4
 54,"Professional, Scientific, Management,  Administrative,
 
-                        and Waste Management Services",Asian,43964,433533,0.10140865862575629
+                        and Waste Management Services",Asian,37396,374727,0.09979531765792163
 54,"Professional, Scientific, Management,  Administrative,
 
-                        and Waste Management Services",Black,31388,433533,0.07240048623749519
+                        and Waste Management Services",Black,25243,374727,0.06736370744568712
 54,"Professional, Scientific, Management,  Administrative,
 
-                        and Waste Management Services",Hispanic,36939,433533,0.08520458650206558
+                        and Waste Management Services",Hispanic,32074,374727,0.08559297835490905
 54,"Professional, Scientific, Management,  Administrative,
 
-                        and Waste Management Services",Other Race,6822,433533,0.015735826338479423
+                        and Waste Management Services",Other Race,5905,374727,0.015758138591561322
 54,"Professional, Scientific, Management,  Administrative,
 
-                        and Waste Management Services",White,313983,433533,0.7242424452117832
+                        and Waste Management Services",White,273854,374727,0.7308093625492692
 55,"Professional, Scientific, Management,  Administrative,
 
-                        and Waste Management Services",Asian,481,6885,0.06986201888162673
+                        and Waste Management Services",Asian,453,6055,0.07481420313790256
 55,"Professional, Scientific, Management,  Administrative,
 
-                        and Waste Management Services",Black,364,6885,0.052868554829339144
+                        and Waste Management Services",Black,256,6055,0.04227910817506193
 55,"Professional, Scientific, Management,  Administrative,
 
-                        and Waste Management Services",Hispanic,463,6885,0.0672476397966594
+                        and Waste Management Services",Hispanic,349,6055,0.05763831544178365
 55,"Professional, Scientific, Management,  Administrative,
 
-                        and Waste Management Services",Other Race,38,6885,0.00551924473493101
+                        and Waste Management Services",Other Race,38,6055,0.006275805119735756
 55,"Professional, Scientific, Management,  Administrative,
 
-                        and Waste Management Services",White,5539,6885,0.8045025417574437
+                        and Waste Management Services",White,4959,6055,0.8189925681255161
 56,"Professional, Scientific, Management,  Administrative,
 
-                        and Waste Management Services",AIAN,228,281476,8.100157739913882e-4
+                        and Waste Management Services",AIAN,169,206053,8.201773330162628e-4
 56,"Professional, Scientific, Management,  Administrative,
 
-                        and Waste Management Services",Asian,7863,281476,0.027934886100413534
+                        and Waste Management Services",Asian,6117,206053,0.029686536958937748
 56,"Professional, Scientific, Management,  Administrative,
 
-                        and Waste Management Services",Black,52832,281476,0.18769628671716238
+                        and Waste Management Services",Black,31807,206053,0.15436319781803712
 56,"Professional, Scientific, Management,  Administrative,
 
-                        and Waste Management Services",Hispanic,94889,281476,0.33711222271170543
+                        and Waste Management Services",Hispanic,72504,206053,0.35187063522491785
 56,"Professional, Scientific, Management,  Administrative,
 
-                        and Waste Management Services",Other Race,3014,281476,0.010707840100044053
+                        and Waste Management Services",Other Race,2035,206053,0.009876099838391094
 56,"Professional, Scientific, Management,  Administrative,
 
-                        and Waste Management Services",White,122650,281476,0.4357387485966832
-61,"Education, Health, and Social Services",AIAN,414,519178,7.974143742608508e-4
-61,"Education, Health, and Social Services",Asian,29527,519178,0.0568725947555559
-61,"Education, Health, and Social Services",Black,73448,519178,0.14146978492925355
-61,"Education, Health, and Social Services",Hispanic,56597,519178,0.10901270855082457
-61,"Education, Health, and Social Services",Other Race,7529,519178,0.014501770105821125
-61,"Education, Health, and Social Services",White,351663,519178,0.677345727284284
-62,"Education, Health, and Social Services",AIAN,1047,694751,0.0015070147434116683
-62,"Education, Health, and Social Services",Asian,71864,694751,0.1034384981093946
-62,"Education, Health, and Social Services",Black,155721,694751,0.22413929594919618
-62,"Education, Health, and Social Services",Hispanic,94422,694751,0.13590768491157262
-62,"Education, Health, and Social Services",Other Race,9554,694751,0.013751689454207334
-62,"Education, Health, and Social Services",White,362143,694751,0.5212558168322176
+                        and Waste Management Services",White,93421,206053,0.45338335282669995
+61,"Education, Health, and Social Services",AIAN,400,421218,9.496270339824035e-4
+61,"Education, Health, and Social Services",Asian,22327,421218,0.0530058069693128
+61,"Education, Health, and Social Services",Black,56063,421218,0.1330973510153887
+61,"Education, Health, and Social Services",Hispanic,47189,421218,0.11202987526648908
+61,"Education, Health, and Social Services",Other Race,5791,421218,0.013748225384480246
+61,"Education, Health, and Social Services",White,289448,421218,0.6871691143303468
+62,"Education, Health, and Social Services",AIAN,709,580950,0.0012204148377657285
+62,"Education, Health, and Social Services",Asian,62836,580950,0.10816077115070144
+62,"Education, Health, and Social Services",Black,120919,580950,0.2081401153283415
+62,"Education, Health, and Social Services",Hispanic,81272,580950,0.13989499956967036
+62,"Education, Health, and Social Services",Other Race,7478,580950,0.012872019967294947
+62,"Education, Health, and Social Services",White,307736,580950,0.529711679146226
 71,"Arts, Entertainment, Recreation, Accommodations,
 
-                        and Food Services",AIAN,151,146474,0.0010308996818548
+                        and Food Services",AIAN,129,105669,0.0012207932316951992
 71,"Arts, Entertainment, Recreation, Accommodations,
 
-                        and Food Services",Asian,4504,146474,0.03074948455015907
+                        and Food Services",Asian,3388,105669,0.032062383480490966
 71,"Arts, Entertainment, Recreation, Accommodations,
 
-                        and Food Services",Black,16975,146474,0.11589087483102803
+                        and Food Services",Black,11856,105669,0.11219941515487039
 71,"Arts, Entertainment, Recreation, Accommodations,
 
-                        and Food Services",Hispanic,21123,146474,0.1442098939060857
+                        and Food Services",Hispanic,16396,105669,0.1551637660998022
 71,"Arts, Entertainment, Recreation, Accommodations,
 
-                        and Food Services",Other Race,2614,146474,0.017846170651446672
+                        and Food Services",Other Race,1665,105669,0.015756749850949662
 71,"Arts, Entertainment, Recreation, Accommodations,
 
-                        and Food Services",White,101107,146474,0.6902726763794257
+                        and Food Services",White,72235,105669,0.6835968921821916
 72,"Arts, Entertainment, Recreation, Accommodations,
 
-                        and Food Services",AIAN,346,417236,8.29266889721884e-4
+                        and Food Services",AIAN,290,326163,8.891259891526629e-4
 72,"Arts, Entertainment, Recreation, Accommodations,
 
-                        and Food Services",Asian,27273,417236,0.06536588405602585
+                        and Food Services",Asian,22207,326163,0.06808558910728685
 72,"Arts, Entertainment, Recreation, Accommodations,
 
-                        and Food Services",Black,54458,417236,0.130520856301949
+                        and Food Services",Black,36629,326163,0.1123027443333548
 72,"Arts, Entertainment, Recreation, Accommodations,
 
-                        and Food Services",Hispanic,146621,417236,0.35141023305755015
+                        and Food Services",Hispanic,124338,326163,0.3812143008250476
 72,"Arts, Entertainment, Recreation, Accommodations,
 
-                        and Food Services",Other Race,6080,417236,0.014572088698003048
+                        and Food Services",Other Race,4261,326163,0.013064020137170678
 72,"Arts, Entertainment, Recreation, Accommodations,
 
-                        and Food Services",White,182458,417236,0.43730167099675005
-81,Other Services,AIAN,281,269679,0.0010419795386366754
-81,Other Services,Asian,18049,269679,0.06692771776816141
-81,Other Services,Black,35909,269679,0.13315460232350312
-81,Other Services,Hispanic,53854,269679,0.19969667641900185
-81,Other Services,Other Race,3305,269679,0.012255310943751645
-81,Other Services,White,158281,269679,0.5869237130069453
-92,Public Administration and Military,AIAN,649,198887,0.003263159482520225
-92,Public Administration and Military,Asian,6218,198887,0.0312639840713571
-92,Public Administration and Military,Black,49042,198887,0.2465822301105653
-92,Public Administration and Military,Hispanic,24410,198887,0.12273300919617672
-92,Public Administration and Military,Other Race,2665,198887,0.013399568599254853
-92,Public Administration and Military,White,115903,198887,0.5827580485401258
-99,Unemployed,AIAN,88,106489,8.263764332466264e-4
-99,Unemployed,Asian,5473,106489,0.05139497976316803
-99,Unemployed,Black,44973,106489,0.4223253105954606
-99,Unemployed,Hispanic,23819,106489,0.22367568481251585
-99,Unemployed,Other Race,1706,106489,0.01602043403544028
-99,Unemployed,White,30430,106489,0.28575721436016865
+                        and Food Services",White,138438,326163,0.4244442196079874
+81,Other Services,AIAN,263,213328,0.001232843321083027
+81,Other Services,Asian,15077,213328,0.0706752043801095
+81,Other Services,Black,23875,213328,0.11191686042151054
+81,Other Services,Hispanic,44620,213328,0.20916147903697593
+81,Other Services,Other Race,2267,213328,0.010626828170704268
+81,Other Services,White,127226,213328,0.5963867846696167
+92,Public Administration and Military,AIAN,599,164199,0.0036480124726703572
+92,Public Administration and Military,Asian,5172,164199,0.031498364789066924
+92,Public Administration and Military,Black,39699,164199,0.24177370142327298
+92,Public Administration and Military,Hispanic,20748,164199,0.12635886942064203
+92,Public Administration and Military,Other Race,2133,164199,0.012990334898507299
+92,Public Administration and Military,White,95848,164199,0.5837307169958404

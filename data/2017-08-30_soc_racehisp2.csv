@@ -1,143 +1,136 @@
 SOC_LABEL,RACE_HISP2,RACE_HISP2_SOC_TOTAL,SOC_TOT_EMP,RACE_HISP_SHARE
-Architecture and Engineering Occupations,AIAN,112,82887,0.0013512372265855924
-Architecture and Engineering Occupations,Asian,10498,82887,0.12665436075621025
-Architecture and Engineering Occupations,Black,5392,82887,0.06505242076562066
-Architecture and Engineering Occupations,Hispanic,7492,82887,0.09038811876410052
-Architecture and Engineering Occupations,Other Race,1334,82887,0.016094200538081967
-Architecture and Engineering Occupations,White,58059,82887,0.700459661949401
-"Arts, Design, Entertainment, Sports, and Media Occupations",AIAN,189,120162,0.0015728766165676337
-"Arts, Design, Entertainment, Sports, and Media Occupations",Asian,6723,120162,0.05594946821790583
-"Arts, Design, Entertainment, Sports, and Media Occupations",Black,10510,120162,0.087465255238761
-"Arts, Design, Entertainment, Sports, and Media Occupations",Hispanic,11813,120162,0.09830894958472729
-"Arts, Design, Entertainment, Sports, and Media Occupations",Other Race,1418,120162,0.011800735673507432
-"Arts, Design, Entertainment, Sports, and Media Occupations",White,89509,120162,0.7449027146685309
-Building and Grounds Cleaning and Maintenance Occupations,AIAN,66,220393,2.9946504653051594e-4
-Building and Grounds Cleaning and Maintenance Occupations,Asian,4843,220393,0.02197438212647407
-Building and Grounds Cleaning and Maintenance Occupations,Black,37165,220393,0.16863058264100947
-Building and Grounds Cleaning and Maintenance Occupations,Hispanic,89991,220393,0.40832059094435846
-Building and Grounds Cleaning and Maintenance Occupations,Other Race,1875,220393,0.008507529730980566
-Building and Grounds Cleaning and Maintenance Occupations,White,86453,220393,0.3922674495106469
-Business and Financial Operations Occupations,AIAN,125,304154,4.1097601872735524e-4
-Business and Financial Operations Occupations,Asian,26390,304154,0.08676525707371924
-Business and Financial Operations Occupations,Black,32371,304154,0.10642963761778573
-Business and Financial Operations Occupations,Hispanic,26704,304154,0.08779762883276235
-Business and Financial Operations Occupations,Other Race,3630,304154,0.011934743583842396
-Business and Financial Operations Occupations,White,214934,304154,0.7066617568731629
-Community and Social Services Occupations,AIAN,124,81225,0.0015266235764850723
-Community and Social Services Occupations,Asian,3750,81225,0.046168051708217916
-Community and Social Services Occupations,Black,22849,81225,0.28130501692828563
-Community and Social Services Occupations,Hispanic,9237,81225,0.11372114496768236
-Community and Social Services Occupations,Other Race,1304,81225,0.016054170514004307
-Community and Social Services Occupations,White,43961,81225,0.5412249923053247
-Computer and Mathematical Occupations,AIAN,204,152842,0.0013347116630245614
-Computer and Mathematical Occupations,Asian,34977,152842,0.22884416587063766
-Computer and Mathematical Occupations,Black,12801,152842,0.08375315685479122
-Computer and Mathematical Occupations,Hispanic,10641,152842,0.0696209157168841
-Computer and Mathematical Occupations,Other Race,2271,152842,0.014858481307494013
-Computer and Mathematical Occupations,White,91948,152842,0.6015885685871685
-Construction and Extraction Occupations,AIAN,313,237757,0.0013164701775342051
-Construction and Extraction Occupations,Asian,2531,237757,0.010645322745492247
-Construction and Extraction Occupations,Black,16731,237757,0.07037016786046257
-Construction and Extraction Occupations,Hispanic,68828,237757,0.28948884785726603
-Construction and Extraction Occupations,Other Race,1786,237757,0.007511871364460352
-Construction and Extraction Occupations,White,147568,237757,0.6206673199947846
-"Educations, Library, and Training Occupations",AIAN,139,343408,4.0476634207706284e-4
-"Educations, Library, and Training Occupations",Asian,20542,343408,0.0598180589852304
-"Educations, Library, and Training Occupations",Black,42692,343408,0.12431859479103574
-"Educations, Library, and Training Occupations",Hispanic,33063,343408,0.09627906164096352
-"Educations, Library, and Training Occupations",Other Race,4627,343408,0.013473768811442948
-"Educations, Library, and Training Occupations",White,242345,343408,0.7057057494292504
-"Farming, Fishing, and Forestry Occupations",Asian,70,9865,0.007095793208312215
-"Farming, Fishing, and Forestry Occupations",Black,671,9865,0.0680182463253928
-"Farming, Fishing, and Forestry Occupations",Hispanic,3632,9865,0.3681702990369995
-"Farming, Fishing, and Forestry Occupations",Other Race,232,9865,0.02351748606183477
-"Farming, Fishing, and Forestry Occupations",White,5260,9865,0.5331981753674607
-Food Preparation and Service Occupations,AIAN,444,316121,0.0014045254823311327
-Food Preparation and Service Occupations,Asian,17930,316121,0.056718788059002725
-Food Preparation and Service Occupations,Black,38373,316121,0.12138706381417243
-Food Preparation and Service Occupations,Hispanic,115160,316121,0.36429088861543524
-Food Preparation and Service Occupations,Other Race,4924,316121,0.015576314132879498
-Food Preparation and Service Occupations,White,139290,316121,0.440622419896179
-Healthcare Practitioners and Technical Occupations,AIAN,420,277836,0.001511683151211506
-Healthcare Practitioners and Technical Occupations,Asian,44463,277836,0.16003325702932666
-Healthcare Practitioners and Technical Occupations,Black,36171,277836,0.1301883125296938
-Healthcare Practitioners and Technical Occupations,Hispanic,21798,277836,0.07845635554787717
-Healthcare Practitioners and Technical Occupations,Other Race,4477,277836,0.01611382254279503
-Healthcare Practitioners and Technical Occupations,White,170507,277836,0.6136965691990959
-Healthcare Support Occupations,AIAN,118,117684,0.0010026851568607457
-Healthcare Support Occupations,Asian,9853,117684,0.08372421059787227
-Healthcare Support Occupations,Black,37829,117684,0.32144556609224706
-Healthcare Support Occupations,Hispanic,19939,117684,0.1694282995139526
-Healthcare Support Occupations,Other Race,1482,117684,0.012593045783623942
-Healthcare Support Occupations,White,48463,117684,0.4118061928554434
-"Installation, Maintenance, and Repair Occupations",AIAN,217,141680,0.0015316205533596838
-"Installation, Maintenance, and Repair Occupations",Asian,4099,141680,0.02893139469226426
-"Installation, Maintenance, and Repair Occupations",Black,13871,141680,0.09790372670807454
-"Installation, Maintenance, and Repair Occupations",Hispanic,35368,141680,0.24963297571993223
-"Installation, Maintenance, and Repair Occupations",Other Race,1294,141680,0.009133258046301525
-"Installation, Maintenance, and Repair Occupations",White,86831,141680,0.6128670242800678
-Legal Occupations,AIAN,31,74147,4.1808839197809755e-4
-Legal Occupations,Asian,3721,74147,0.050184093759693585
-Legal Occupations,Black,5356,74147,0.07223488475595775
-Legal Occupations,Hispanic,4739,74147,0.06391357708336143
-Legal Occupations,Other Race,1019,74147,0.013742970045989723
-Legal Occupations,White,59281,74147,0.7995063859630194
-"Life, Physical, and Social Science Occupations",Asian,6494,40224,0.1614459029435163
-"Life, Physical, and Social Science Occupations",Black,2704,40224,0.06722354813046937
-"Life, Physical, and Social Science Occupations",Hispanic,2828,40224,0.07030628480509149
-"Life, Physical, and Social Science Occupations",Other Race,771,40224,0.019167661097852028
-"Life, Physical, and Social Science Occupations",White,27427,40224,0.6818566030230708
-Management Occupations,AIAN,305,533640,5.715463608425155e-4
-Management Occupations,Asian,36335,533640,0.06808897384004198
-Management Occupations,Black,49911,533640,0.0935293456262649
-Management Occupations,Hispanic,48995,533640,0.09181283262124279
-Management Occupations,Other Race,5201,533640,0.009746270894235815
-Management Occupations,White,392893,533640,0.736251030657372
-Military Occupations,AIAN,54,11461,0.0047116307477532504
-Military Occupations,Asian,657,11461,0.05732484076433121
-Military Occupations,Black,1407,11461,0.12276415670534857
-Military Occupations,Hispanic,1763,11461,0.15382601867201814
-Military Occupations,Other Race,424,11461,0.03699502661198848
-Military Occupations,White,7156,11461,0.6243783264985603
-Office and Administrative Support Occupations,AIAN,961,784517,0.0012249575216343304
-Office and Administrative Support Occupations,Asian,34944,784517,0.04454205581268475
-Office and Administrative Support Occupations,Black,139865,784517,0.17828166884847618
-Office and Administrative Support Occupations,Hispanic,136928,784517,0.17453796412314837
-Office and Administrative Support Occupations,Other Race,10280,784517,0.013103603873466095
-Office and Administrative Support Occupations,White,461539,784517,0.5883097498205903
-Personal Care and Service Occupations,AIAN,467,223748,0.0020871694942524626
-Personal Care and Service Occupations,Asian,15078,223748,0.06738831185083219
-Personal Care and Service Occupations,Black,51236,223748,0.2289897563330175
-Personal Care and Service Occupations,Hispanic,35423,223748,0.15831649891842609
-Personal Care and Service Occupations,Other Race,3635,223748,0.01624595527110857
-Personal Care and Service Occupations,White,117909,223748,0.5269723081323632
-Production Occupations,AIAN,277,356758,7.764366881751776e-4
-Production Occupations,Asian,20979,356758,0.05880456780226372
-Production Occupations,Black,41086,356758,0.11516490169806984
-Production Occupations,Hispanic,154267,356758,0.4324135688618055
-Production Occupations,Other Race,3533,356758,0.009903071549902175
-Production Occupations,White,136616,356758,0.38293745339978363
-Protective Service Occupations,AIAN,65,124593,5.216986508070276e-4
-Protective Service Occupations,Asian,1446,124593,0.011605788447184032
-Protective Service Occupations,Black,36733,124593,0.29482394677068535
-Protective Service Occupations,Hispanic,17481,124593,0.14030483253473308
-Protective Service Occupations,Other Race,1357,124593,0.01089146260223287
-Protective Service Occupations,White,67511,124593,0.5418522709943576
-Sales and Related Occupations,AIAN,731,635874,0.0011495988198919913
-Sales and Related Occupations,Asian,36220,635874,0.05696097025511344
-Sales and Related Occupations,Black,83775,635874,0.131747799092273
-Sales and Related Occupations,Hispanic,100984,635874,0.15881133683717213
-Sales and Related Occupations,Other Race,10129,635874,0.01592925642501502
-Sales and Related Occupations,White,404035,635874,0.6354010385705344
-Transportation and Material Moving Occupations,AIAN,606,403127,0.0015032483559771486
-Transportation and Material Moving Occupations,Asian,12846,403127,0.031865888417297775
-Transportation and Material Moving Occupations,Black,86640,403127,0.2149198639634656
-Transportation and Material Moving Occupations,Hispanic,121723,403127,0.30194702910001064
-Transportation and Material Moving Occupations,Other Race,5648,403127,0.014010473126334877
-Transportation and Material Moving Occupations,White,175664,403127,0.4357534970369139
-Unemployed,AIAN,88,106489,8.263764332466264e-4
-Unemployed,Asian,5473,106489,0.05139497976316803
-Unemployed,Black,44973,106489,0.4223253105954606
-Unemployed,Hispanic,23819,106489,0.22367568481251585
-Unemployed,Other Race,1706,106489,0.01602043403544028
-Unemployed,White,30430,106489,0.28575721436016865
+Architecture and Engineering Occupations,AIAN,14,73389,1.9076428347572524e-4
+Architecture and Engineering Occupations,Asian,9107,73389,0.12409216640095927
+Architecture and Engineering Occupations,Black,4820,73389,0.06567741759664254
+Architecture and Engineering Occupations,Hispanic,6717,73389,0.09152597800760331
+Architecture and Engineering Occupations,Other Race,1123,73389,0.015302020738802817
+Architecture and Engineering Occupations,White,51608,73389,0.7032116529725163
+"Arts, Design, Entertainment, Sports, and Media Occupations",AIAN,189,93785,0.0020152476408807378
+"Arts, Design, Entertainment, Sports, and Media Occupations",Asian,4795,93785,0.05112757903715946
+"Arts, Design, Entertainment, Sports, and Media Occupations",Black,7496,93785,0.07992749373567201
+"Arts, Design, Entertainment, Sports, and Media Occupations",Hispanic,9192,93785,0.09801140907394573
+"Arts, Design, Entertainment, Sports, and Media Occupations",Other Race,855,93785,0.009116596470650957
+"Arts, Design, Entertainment, Sports, and Media Occupations",White,71258,93785,0.7598016740416911
+Building and Grounds Cleaning and Maintenance Occupations,AIAN,66,164857,4.0034696737172216e-4
+Building and Grounds Cleaning and Maintenance Occupations,Asian,3870,164857,0.023474890359523708
+Building and Grounds Cleaning and Maintenance Occupations,Black,23370,164857,0.14175922162844162
+Building and Grounds Cleaning and Maintenance Occupations,Hispanic,72675,164857,0.44083660384454404
+Building and Grounds Cleaning and Maintenance Occupations,Other Race,1162,164857,0.007048532970999108
+Building and Grounds Cleaning and Maintenance Occupations,White,63714,164857,0.3864804042291198
+Business and Financial Operations Occupations,AIAN,95,265311,3.5807034009143987e-4
+Business and Financial Operations Occupations,Asian,22579,265311,0.08510389693604864
+Business and Financial Operations Occupations,Black,26496,265311,0.0998677024322399
+Business and Financial Operations Occupations,Hispanic,23563,265311,0.08881275182710102
+Business and Financial Operations Occupations,Other Race,3101,265311,0.011688169732879526
+Business and Financial Operations Occupations,White,189477,265311,0.7141694087316395
+Community and Social Services Occupations,AIAN,109,67597,0.0016124975960471618
+Community and Social Services Occupations,Asian,3244,67597,0.04799029542731186
+Community and Social Services Occupations,Black,17763,67597,0.26277793393197924
+Community and Social Services Occupations,Hispanic,7923,67597,0.11720934360992352
+Community and Social Services Occupations,Other Race,1000,67597,0.014793555927038182
+Community and Social Services Occupations,White,37558,67597,0.5556163735077001
+Computer and Mathematical Occupations,AIAN,204,138023,0.0014780145338095824
+Computer and Mathematical Occupations,Asian,32106,138023,0.23261340501220812
+Computer and Mathematical Occupations,Black,11006,138023,0.07974033313288365
+Computer and Mathematical Occupations,Hispanic,9825,138023,0.07118378820921151
+Computer and Mathematical Occupations,Other Race,1987,138023,0.014396151366076668
+Computer and Mathematical Occupations,White,82895,138023,0.6005883077458105
+Construction and Extraction Occupations,AIAN,177,180273,9.818442029588459e-4
+Construction and Extraction Occupations,Asian,1814,180273,0.01006251629473077
+Construction and Extraction Occupations,Black,10423,180273,0.05781786512677994
+Construction and Extraction Occupations,Hispanic,54870,180273,0.3043717029172422
+Construction and Extraction Occupations,Other Race,1437,180273,0.007971243613852324
+Construction and Extraction Occupations,White,111552,180273,0.618794827844436
+"Educations, Library, and Training Occupations",AIAN,125,277622,4.502525016028989e-4
+"Educations, Library, and Training Occupations",Asian,14978,277622,0.05395105575206576
+"Educations, Library, and Training Occupations",Black,32526,277622,0.11715930293708712
+"Educations, Library, and Training Occupations",Hispanic,27700,277622,0.0997759543552024
+"Educations, Library, and Training Occupations",Other Race,3553,277622,0.012797977105560798
+"Educations, Library, and Training Occupations",White,198740,277622,0.7158654573484811
+"Farming, Fishing, and Forestry Occupations",Black,306,6734,0.04544104544104544
+"Farming, Fishing, and Forestry Occupations",Hispanic,2810,6734,0.4172854172854173
+"Farming, Fishing, and Forestry Occupations",Other Race,105,6734,0.015592515592515593
+"Farming, Fishing, and Forestry Occupations",White,3513,6734,0.5216810216810217
+Food Preparation and Service Occupations,AIAN,349,245227,0.0014231711842496951
+Food Preparation and Service Occupations,Asian,14432,245227,0.058851594644961605
+Food Preparation and Service Occupations,Black,26011,245227,0.10606907069776167
+Food Preparation and Service Occupations,Hispanic,98312,245227,0.40090202139242415
+Food Preparation and Service Occupations,Other Race,3602,245227,0.014688431534863617
+Food Preparation and Service Occupations,White,102521,245227,0.41806571054573927
+Healthcare Practitioners and Technical Occupations,AIAN,269,248556,0.0010822510822510823
+Healthcare Practitioners and Technical Occupations,Asian,40923,248556,0.16464297784000387
+Healthcare Practitioners and Technical Occupations,Black,31186,248556,0.12546870725309386
+Healthcare Practitioners and Technical Occupations,Hispanic,19722,248556,0.07934630425336744
+Healthcare Practitioners and Technical Occupations,Other Race,3934,248556,0.01582741917314408
+Healthcare Practitioners and Technical Occupations,White,152522,248556,0.6136323403981396
+Healthcare Support Occupations,AIAN,99,95291,0.0010389228783410816
+Healthcare Support Occupations,Asian,8240,95291,0.08647196482354053
+Healthcare Support Occupations,Black,29226,95291,0.3067026266908732
+Healthcare Support Occupations,Hispanic,17432,95291,0.1829343799519367
+Healthcare Support Occupations,Other Race,1114,95291,0.011690505923959241
+Healthcare Support Occupations,White,39180,95291,0.41116159973134925
+"Installation, Maintenance, and Repair Occupations",AIAN,217,120688,0.0017980246586238896
+"Installation, Maintenance, and Repair Occupations",Asian,3487,120688,0.028892681956781123
+"Installation, Maintenance, and Repair Occupations",Black,10395,120688,0.08613118122762826
+"Installation, Maintenance, and Repair Occupations",Hispanic,31774,120688,0.2632738963277211
+"Installation, Maintenance, and Repair Occupations",Other Race,1009,120688,0.008360400371205091
+"Installation, Maintenance, and Repair Occupations",White,73806,120688,0.6115438154580406
+Legal Occupations,AIAN,6,65406,9.173470323823502e-5
+Legal Occupations,Asian,2923,65406,0.04469008959422683
+Legal Occupations,Black,4579,65406,0.07000886768797969
+Legal Occupations,Hispanic,4168,65406,0.0637250405161606
+Legal Occupations,Other Race,951,65406,0.01453995046326025
+Legal Occupations,White,52779,65406,0.8069443170351344
+"Life, Physical, and Social Science Occupations",Asian,5407,34230,0.1579608530528776
+"Life, Physical, and Social Science Occupations",Black,2246,34230,0.06561495763949751
+"Life, Physical, and Social Science Occupations",Hispanic,2216,34230,0.06473853345018989
+"Life, Physical, and Social Science Occupations",Other Race,538,34230,0.015717207128250074
+"Life, Physical, and Social Science Occupations",White,23823,34230,0.695968448729185
+Management Occupations,AIAN,245,468935,5.22460468934927e-4
+Management Occupations,Asian,31661,468935,0.06751682002836214
+Management Occupations,Black,40963,468935,0.08735325791420986
+Management Occupations,Hispanic,43896,468935,0.09360785609945942
+Management Occupations,Other Race,4150,468935,0.008849840596244682
+Management Occupations,White,348020,468935,0.7421497648927889
+Military Occupations,AIAN,54,9774,0.0055248618784530384
+Military Occupations,Asian,624,9774,0.06384284837323512
+Military Occupations,Black,1334,9774,0.13648455084919173
+Military Occupations,Hispanic,1404,9774,0.143646408839779
+Military Occupations,Other Race,361,9774,0.03693472478002865
+Military Occupations,White,5997,9774,0.6135666052793125
+Office and Administrative Support Occupations,AIAN,767,616004,0.0012451217849234746
+Office and Administrative Support Occupations,Asian,27266,616004,0.044262699592859785
+Office and Administrative Support Occupations,Black,102840,616004,0.16694696787683197
+Office and Administrative Support Occupations,Hispanic,114606,616004,0.1860474931980961
+Office and Administrative Support Occupations,Other Race,7721,616004,0.012534009519418705
+Office and Administrative Support Occupations,White,362804,616004,0.5889637080278699
+Personal Care and Service Occupations,AIAN,283,167205,0.001692533118028767
+Personal Care and Service Occupations,Asian,11953,167205,0.07148709667773093
+Personal Care and Service Occupations,Black,35430,167205,0.21189557728536826
+Personal Care and Service Occupations,Hispanic,28007,167205,0.16750097186088933
+Personal Care and Service Occupations,Other Race,2255,167205,0.013486438802667384
+Personal Care and Service Occupations,White,89277,167205,0.5339373822553153
+Production Occupations,AIAN,209,287976,7.257549240214463e-4
+Production Occupations,Asian,17200,287976,0.05972719948884629
+Production Occupations,Black,28641,287976,0.09945620468372364
+Production Occupations,Hispanic,130860,287976,0.45441286773897827
+Production Occupations,Other Race,2807,287976,0.009747340056115788
+Production Occupations,White,108259,287976,0.3759306331083146
+Protective Service Occupations,AIAN,48,101635,4.7227825060264673e-4
+Protective Service Occupations,Asian,1181,101635,0.011620012790869287
+Protective Service Occupations,Black,28960,101635,0.28494121119693017
+Protective Service Occupations,Hispanic,14841,101635,0.14602253160820583
+Protective Service Occupations,Other Race,1098,101635,0.010803364982535544
+Protective Service Occupations,White,55507,101635,0.5461406011708565
+Sales and Related Occupations,AIAN,565,504843,0.0011191598180028245
+Sales and Related Occupations,Asian,29442,504843,0.058319120994051614
+Sales and Related Occupations,Black,57654,504843,0.11420184096838026
+Sales and Related Occupations,Hispanic,81887,504843,0.162202902684597
+Sales and Related Occupations,Other Race,7864,504843,0.015577120015529581
+Sales and Related Occupations,White,327431,504843,0.6485798555194388
+Transportation and Material Moving Occupations,AIAN,568,313261,0.0018131845330251772
+Transportation and Material Moving Occupations,Asian,10460,313261,0.03339068699901999
+Transportation and Material Moving Occupations,Black,60324,313261,0.1925678587503711
+Transportation and Material Moving Occupations,Hispanic,98395,313261,0.314099105857416
+Transportation and Material Moving Occupations,Other Race,3635,313261,0.011603742566103026
+Transportation and Material Moving Occupations,White,139879,313261,0.4465254212940647
