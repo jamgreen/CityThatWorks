@@ -76,20 +76,55 @@ naics_race <- read_csv("./data/2017-08-30_naics_super_racehisp2.csv")
 soc_race <- read_csv("./data/2017-08-30_soc_racehisp2.csv")
 
 
-
-
 naics_race <- naics_race %>% group_by(NAICS_LABEL_ADJUSTED,RACE_HISP2) %>% 
   summarise(RACE_TOTAL = sum(RACE_HISP2_NAICS_TOTAL))
 naics_race <- naics_race %>% group_by(NAICS_LABEL_ADJUSTED) %>% 
   mutate(NAICS_TOT = sum(RACE_TOTAL),RACE_HISP_SHARE = RACE_TOTAL/NAICS_TOT)
 
 
-naics_race$NAICS_LABEL_ADJUSTED <- factor(naics_race$NAICS_LABEL_ADJUSTED, 
-                                          levels = naics_race$NAICS_LABEL_ADJUSTED)
+naics_race$NAICS_FACTOR <- factor(naics_race$NAICS_LABEL_ADJUSTED, 
+                                          levels = c("Agriculture, Forestry, Fishing and Hunting",
+                                                     "Mining", "Utilities","Construction", 
+                                                     "Manufacturing", "Wholesale Trade",
+                                                     "Retail Trade", "Transportation and Warehousing",
+                                                     "Information and Communications", 
+                                                     "Fire, Insurance, Real Estate,\n and Rental and Leasing",
+                                                     "Professional, Scientific, Management,  Administrative,\n
+                                                      and Waste Management Services",
+                                                     "Education, Health, and Social Services",
+                                                     "Arts, Entertainment, Recreation, Accommodations,\n
+                                                      and Food Services", "Other Services", 
+                                                     "Public Administration and Military"),
+                                  ordered = TRUE)
 
-naics_plot <- naics_race %>% filter(!is.na(NAICS_LABEL_ADJUSTED)) %>% 
-  ggplot(aes(x = factor(NAICS_LABEL_ADJUSTED, levels =rev(levels(NAICS_LABEL_ADJUSTED))) , 
-             y = RACE_HISP_SHARE, fill = RACE_HISP2))
+naics_race <- naics_race %>% mutate(NAICS_FACTOR = ifelse(is.na(NAICS_FACTOR) & 
+                                                          str_detect(NAICS_LABEL_ADJUSTED, 
+                                                          "Professional, Scientific"),
+                                                          "Professional, Scientific, Management,  Administrative,\n
+                                                      and Waste Management Services",
+                                                          if_else(is.na(NAICS_FACTOR) &
+                                                                    str_detect(NAICS_LABEL_ADJUSTED,
+                                                                               "Arts, Entertainment"),
+                                                      "Arts, Entertainment, Recreation, Accommodations,\n
+                                                      and Food Services", NAICS_LABEL_ADJUSTED)))
+
+# naics_race$NAICS_FACTOR <- factor(naics_race$NAICS_LABEL_ADJUSTED, 
+#                                   levels = c("Agriculture, Forestry, Fishing and Hunting",
+#                                              "Mining", "Utilities","Construction", 
+#                                              "Manufacturing", "Wholesale Trade",
+#                                              "Retail Trade", "Transportation and Warehousing",
+#                                              "Information and Communications", 
+#                                              "Fire, Insurance, Real Estate,\n and Rental and Leasing",
+#                                              "Professional, Scientific, Management,  Administrative,\n
+#                                              and Waste Management Services",
+#                                              "Education, Health, and Social Services",
+#                                              "Arts, Entertainment, Recreation, Accommodations,\n
+#                                              and Food Services", "Other Services", 
+#                                              "Public Administration and Military"),
+#                                   ordered = TRUE)
+
+naics_plot <- naics_race  %>% 
+  ggplot(aes(x = NAICS_FACTOR, y = RACE_HISP_SHARE, fill = RACE_HISP2))
 
 naics_plot + geom_bar(stat = "identity", position = "stack") + theme_minimal() +
   labs(x = "NAICS Super Sectors", y = "Race/Ethnicity Share of Employment", 
