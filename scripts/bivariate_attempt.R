@@ -1,10 +1,12 @@
 #bivariate choropleth following kiefer:http://lenkiefer.com/2017/04/24/bivariate-map
-
-library(tidyverse)
-library(sf)
-library(viridis)
 devtools::install_github("tidyverse/ggplot2")
 library(ggplot2)
+
+library(tidyverse)
+library(stringr)
+library(sf)
+library(viridis)
+
 
 chi_tracts <- st_read("./data/09-09-2017_chi_led_acs_tracts.geojson")
 
@@ -66,22 +68,51 @@ chi_tracts <- chi_tracts %>% mutate(Y_Black = ifelse(BlackPer < black.v[1], 1,
                                     Y_HigherEarning = ifelse(hI_JobsWC < highearning.v[1], 1,
                                                              ifelse(hI_JobsWC < highearning.v[2], 2, 3)))
 
+#filter for a close in look at Cook and Dupage Counties
+county_tracts <- chi_tracts %>% mutate(CountyFIPs = str_sub(GEOID, 1, 5)) %>% 
+  filter(CountyFIPs %in% c("17031", "17043"))
+
+#create new legend and map
+
 g.legendBlack <- ggplot(d, aes(x, y, fill = atan(y/x),
                   alpha = x + y, label = paste0(xlabel, "\n", ylabel))) +
   geom_tile() + scale_fill_viridis() + theme_void() +
   theme(legend.position = "none", axis.title = element_text(size = 5),
         panel.background = element_blank(), plot.margin = margin(t = 10, b = 10, l = 10)) +
-  theme(axis.title = element_text(color = "black")) +
+  theme(axis.title = element_text(color = "black", size = 14)) +
   labs(x = "Number of Jobs Earning $3,330/month or more",
-       y = "Share of Population that is Black (%")
+       y = "Share of Population that is Black (%)") +
+  # Draw some arrows:
+  geom_segment(aes(x=1, xend = 3 , y=0, yend = 0), size=1.5,
+               arrow = arrow(length = unit(0.6,"cm"))) +
+  geom_segment(aes(x=0, xend = 0 , y=1, yend = 3), size=1.5,
+               arrow = arrow(length = unit(0.6,"cm"))) 
 
-gmap <- ggplot(chi_tracts, aes(fill = atan(Y_HigherEarning/Y_Black),alpha = Y_HigherEarning + Y_Black)) + 
+#big msa map
+gmap <- ggplot(chi_tracts, aes(fill = atan(Y_Black/Y_HigherEarning),alpha = Y_HigherEarning + Y_Black)) + 
   geom_sf() + coord_sf(datum = NA) +
   theme(plot.title = element_text(size = 16, face = "bold", margin = margin(b=10))) +
   theme(plot.subtitle = element_text(size = 14, margin = margin(b = -20))) +
   theme(plot.caption = element_text(size = 9, margin = margin(t = -15), hjust = 0)) +
   scale_fill_viridis() + guides(alpha = FALSE, fill = FALSE) +
-  labs(caption = "@surlurbanist Source: U.S. Census Bureau ACS and LEHD",
+  labs(caption = "@surlyurbanist Source: U.S. Census Bureau ACS and LEHD",
+       title = "High Earning Jobs and Black Population for 2014",
+       subtitle = "Bivariate Choropleth") + theme_minimal()
+
+#Dupage And Cook County Map
+#load the county outlines
+require(tigris)
+options(tigris_class = "sf", tigris_use_cache = TRUE)
+cook_dupage <- counties(state = "il") %>% filter(GEOID %in% c("17031", "17043")) %>% 
+  select(GEOID, NAME)
+
+cmap <- ggplot(county_tracts, aes(fill = atan(Y_Black/Y_HigherEarning),alpha = Y_HigherEarning + Y_Black)) + 
+  geom_sf() + coord_sf(datum = NA) +
+  theme(plot.title = element_text(size = 16, face = "bold", margin = margin(b=10))) +
+  theme(plot.subtitle = element_text(size = 14, margin = margin(b = -20))) +
+  theme(plot.caption = element_text(size = 9, margin = margin(t = -15), hjust = 0)) +
+  scale_fill_viridis() + guides(alpha = FALSE, fill = FALSE) +
+  labs(caption = "@surlyurbanist Source: U.S. Census Bureau ACS and LEHD",
        title = "High Earning Jobs and Black Population for 2014",
        subtitle = "Bivariate Choropleth") + theme_minimal()
 
